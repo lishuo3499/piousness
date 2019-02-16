@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Developed By M Abdur Rokib Promy">
+    <meta name="author" content="cosmic">
+    <meta name="keywords" content="Bootstrap 3, Template, Theme, Responsive, Corporate, Business">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>
+      Acme | Home
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/green/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/green/css/theme.css" rel="stylesheet">
+    <link href="/green/css/bootstrap-reset.css" rel="stylesheet">
+    <!--external css-->
+    <link href="/green/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/green/css/flexslider.css"/>
+    <link href="/green/assets/bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/green/css/animate.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+
+    <!-- Custom styles for this template -->
+    <link href="/green/css/style.css" rel="stylesheet">
+    <link href="/green/css/style-responsive.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+<script src="js/html5shiv.js">
+</script>
+<script src="js/respond.min.js">
+</script>
+<![endif]-->
+  </head>
+
+  <body>
+    <%= render "/articles/header"  %>
+
+
+
+
+    <!--breadcrumbs start-->
+    <div class="breadcrumbs" style="background-color: #FA7D5F;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4">
+            <h1>
+              Blog Details
+            </h1>
+          </div>
+          <div class="col-lg-8 col-sm-8">
+            <ol class="breadcrumb pull-right">
+              <li>
+                <a href="#">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Blog
+                </a>
+              </li>
+              <li class="active">
+                Blog Details
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--breadcrumbs end-->
+
+
+
+
+
+
+
+
+
+
+    <!--container start-->
+    <div class="container">
+      <div class="row">
+        <!--blog start-->
+        <div class="col-lg-9">
+          <div class="blog-item">
+            <div class="row">
+              <div class="col-lg-2 col-sm-2">
+                <div class="date-wrap">
+                  <span class="date">
+                    11
+                  </span>
+                  <span class="month">
+                    January
+                  </span>
+                </div>
+
+              </div>
+              <div class="col-lg-10 col-sm-10">
+
+
+                <div class="blog-img gs">
+                  <img src="/uploads/<%=  @article_blog.img_address %>/" alt=""/>
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2 col-sm-2 text-right">
+                <div class="author">
+                  By
+                  <a href="#">
+                    Admin
+                  </a>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="javascript:;">
+                      <em>
+                        <%=  @article_blog.created %>
+                      </em>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">
+                      <em>
+                        作者： <%=  @article_blog.author %>
+                      </em>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">
+                      <em>
+                        发布者：<%=  @article_blog.inputer %>
+                      </em>
+                    </a>
+                  </li>
+               
+                </ul>
+           <!--      <div class="st-view">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="javascript:;">
+                        209查看
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:;">
+                       23分享
+
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:;">
+                       23评论
+                      </a>
+                    </li>
+
+                  </ul>
+                </div> -->
+              </div>
+              <div class="col-lg-10 col-sm-10">
+                <h1>
+                  <a href="blog_detail.html">
+                   <%=  @article_blog.title %>
+                  </a>
+                </h1>
+                <p>
+                  <%=  @article_blog.details %>
+                </p>
+                
+                
+               
+              
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3">
+          <div class="blog-side-item">
+            <div class="search-row">
+              <input type="text" class="form-control" placeholder="Search here">
+            </div>
+            <div class="category">
+              <h3>
+                Categories
+              </h3>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="javascript:;">
+                    <i class="fa fa-angle-right pr-10">
+                    </i>
+                   “互联网+”思维
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <i class="fa fa-angle-right pr-10">
+                    </i>
+                   社会互助养老
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <i class="fa fa-angle-right pr-10">
+                    </i>
+                   养老服务供给侧改革
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <i class="fa fa-angle-right pr-10">
+                    </i>
+                   公办养老机构入住评估制度
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;">
+                    <i class="fa fa-angle-right pr-10">
+                    </i>
+                   智慧医养护一体化
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="blog-post">
+              <h3>
+                Latest Blog Post
+              </h3>
+              <div class="media">
+                <a class="pull-left gs" href="javascript:;">
+                  <img class=" " src="/green/img/blog/blog-thumb-1.jpg" alt="">
+                </a>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="javascript:;">
+                      02 May 2014
+                    </a>
+                  </h5>
+                  <p>
+                    第二届中国(国际)养老产业发展 暨适老建筑与设施科技论坛邀请函
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <a class="pull-left gs" href="javascript:;">
+                  <img class=" " src="/green/img/blog/blog-thumb-2.jpg" alt="">
+                </a>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="javascript:;">
+                      02 May 2014
+                    </a>
+                  </h5>
+                  <p>
+                   医院及养老机构膳食营养管理论坛即将召开
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <a class="pull-left gs" href="javascript:;">
+                  <img class=" " src="/green/img/blog/blog-thumb-3.jpg" alt="">
+                </a>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="javascript:;">
+                      02 May 2014
+                    </a>
+                  </h5>
+                  <p>
+                    养老产业台湾菁华研习团招募
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tags">
+              <h3>
+                Tags
+              </h3>
+              <ul class="tag">
+                <li>
+                  <a href="#">
+                    <i class="fa fa-tags pr-5">
+                    </i>
+                    社会互助养老
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-tags pr-5">
+                    </i>
+                    养老服务
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-tags pr-5">
+                    </i>
+                    养老机构
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-tags pr-5">
+                    </i>
+                    智慧医养护
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-tags pr-5">
+                    </i>
+                    政府购买服务
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-tags pr-5">
+                    </i>
+                    养老产业
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-tags pr-5">
+                    </i>
+                    长期照护保障体系
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-tags pr-5">
+                    </i>
+                    互联网+养老
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-tags pr-5">
+                    </i>
+                    退休金
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-tags pr-5">
+                    </i>
+                    基本生活需要
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <!--container end-->
+
+   <%= render "articles/footer"  %>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="/green/js/jquery.js">
+    </script>
+    <script src="/green/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript" src="/green/js/hover-dropdown.js">
+    </script>
+    <script defer src="/green/js/jquery.flexslider.js">
+    </script>
+    <script type="text/javascript" src="/green/assets/bxslider/jquery.bxslider.js">
+    </script>
+
+    <script src="/green/js/jquery.easing.min.js">
+    </script>
+    <script src="/green/js/link-hover.js">
+    </script>
+
+
+    <!--common script for all pages-->
+    <script src="/green/js/common-scripts.js">
+    </script>
+
+
+    <script src="/green/js/wow.min.js">
+    </script>
+    <script>
+      wow = new WOW(
+        {
+          boxClass:     'wow',      // default
+          animateClass: 'animated', // default
+          offset:       0          // default
+        }
+      )
+        wow.init();
+    </script>
+
+  </body>
+</html>

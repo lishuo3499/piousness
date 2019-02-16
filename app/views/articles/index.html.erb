@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Developed By M Abdur Rokib Promy">
+    <meta name="author" content="cosmic">
+    <meta name="keywords" content="Bootstrap 3, Template, Theme, Responsive, Corporate, Business">
+
+
+
+
+
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/font_design/css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" type="text/css" href="/font_design/css/htmleaf-demo.css">
+    <link href="/green/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/green/css/theme.css" rel="stylesheet">
+    <link href="/green/css/bootstrap-reset.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+    <!--external css-->
+    <link href="/green/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/green/css/flexslider.css"/>
+    <link href="/green/assets/bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/green/css/animate.css">
+    <link rel="stylesheet" href="/green/assets/owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="/green/assets/owlcarousel/owl.theme.css">
+     <link rel="stylesheet" href="/css/style.css">
+    <link href="/green/css/superfish.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="/green/css/component.css">
+    <link href="/green/css/style.css" rel="stylesheet">
+    <link href="/green/css/style-responsive.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="/green/css/parallax-slider/parallax-slider.css" />
+   <!-- 时间轴 -->
+   <link rel="shortcut icon" href="../favicon.ico">
+
+        <link rel="stylesheet" type="text/css" href="/VerticalTimeline/css/default.css" />
+
+        <link rel="stylesheet" type="text/css" href="/VerticalTimeline/css/component.css" />
+
+        <script src="/VerticalTimeline/js/modernizr.custom.js"></script>
+
+
+
+
+
+
+
+ <link rel="stylesheet" href="/greenIndex/layout/style.css" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic" rel="stylesheet" type="text/css" />
+
+
+
+<link rel="stylesheet" href="/greenIndex/layout/plugins/prettyphoto/css/prettyPhoto.css" type="text/css" />
+
+
+<link rel="stylesheet" href="/greenIndex/layout/plugins/calendar/calendar.css" type="text/css" />
+<link rel="stylesheet" href="/greenIndex/layout/plugins/video-audio/mediaelementplayer.css" />
+<link rel="stylesheet" href="/greenIndex/layout/plugins/flexslider/flexslider.css" type="text/css" />
+<link rel="stylesheet" href="/greenIndex/layout/plugins/ibuttons/css/jquery.ibutton.css" type="text/css" />
+
+
+
+<style type="text/css">
+    .btn{
+        border: none;
+        border-radius: 0;
+        text-transform: uppercase;
+        padding-top: 0;
+        padding-bottom: 0;
+        position: relative;
+        transition: all 0.3s ease 0s;
+    }
+    .btn:before{
+        content: "";
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-top: 2px solid transparent;
+        transition: all 0.3s ease 0s;
+    }
+    .btn:hover:before{
+        transform: translateY(42px);
+    }
+    .btn:after{
+        content: "\f105";
+        font-family:fontawesome;
+        display: inline-block;
+        width: 44px;
+        height: 44px;
+        border: 2px solid transparent;
+        font-size: 24px;
+        line-height: 40px;
+        position: relative;
+        top: 0;
+        right: -16px;
+        transition: all 0.43s ease 0s;
+    }
+    .btn:hover:after{
+        transform: rotateX(180deg);
+    }
+    .btn.btn-sm:hover:before{
+        transform: translateY(32px);
+    }
+    .btn.btn-sm:after{
+        width: 34px;
+        height: 34px;
+        line-height: 30px;
+        font-size: 20px;
+        right: -10px;
+    }
+    .btn.btn-xs:hover:before{
+        transform: translateY(22px);
+    }
+    .btn.btn-xs:after{
+        width: 24px;
+        height: 24px;
+        line-height: 20px;
+        font-size: 16px;
+        right: -5px;
+    }
+    .btn.red{
+        color: #ff6e6e;
+    }
+    .btn.red:before,
+    .btn.red:after{
+        border-color: #ff6e6e;
+    }
+    .btn.blue{
+        color: #5cbcf7;
+    }
+    .btn.blue:before,
+    .btn.blue:after{
+        border-color: #5cbcf7;
+    }
+    .btn.orange{
+        color: #ef965b;
+    }
+    .btn.orange:before,
+    .btn.orange:after{
+        border-color: #ef965b;
+    }
+    .btn.green{
+        color: #7ad79a;
+    }
+    .btn.green:before,
+    .btn.green:after{
+        border-color: #7ad79a;
+    }
+    @media only  screen and (max-width: 767px){
+        .btn{ margin-bottom: 20px; }
+    }
+  </style>
+  </head>
+
+  <body>
+    <!--header start-->
+    <%= render "/articles/header"  %>
+  
+
+
+
+
+
+
+
+
+<div id="appss" style="height: 500px;">
+    <carousel  autoplay v-model="value2" style="height: 500px;">
+        <carousel-item>
+            <div class="demo-carousel" style="height: 500px;background-image: url(/image/banner10.jpg); background-size: 100% 800px ; background-repeat: no-repeat;" ></div>
+        </carousel-item>
+        <carousel-item>
+            <div class="demo-carousel" style="height: 500px;background-image: url(/image/banner6.jpg); background-size: 100% 800px ; background-repeat: no-repeat;"></div>
+        </carousel-item>
+        <carousel-item>
+            <div class="demo-carousel" style="height: 500px;background-image: url(/image/banner3.jpg); background-size: 100% 800px ; background-repeat: no-repeat;"></div>
+        </carousel-item>
+        <carousel-item>
+            <div class="demo-carousel" style="height: 500px;background-image: url(/image/banner1.jpg); background-size: 100% 800px ; background-repeat: no-repeat;"></div>
+        </carousel-item>
+    </carousel>
+</div>
+
+
+
+<script type="text/javascript">
+  
+    var Main = {
+        data () {
+            return {
+                value2: 0
+            }
+        }
+    }
+
+var Component = Vue.extend(Main)
+new Component().$mount('#appss')
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="content" class="right_sidebar">
+          <div class="inner"  style="width: 1400px; margin: 0 auto;">
+              <div class="general_content" >
+                  <div class="main_content">
+                      <div class="block_special_topic">
+                          <div class="type"><p>Special topics</p></div>
+                            <div class="title"><p><a href="#">扶老养老传家久，尊老敬老世泽长。</a></p></div>
+                        </div>
+                        <div class="separator" style="height:17px;"></div>
+                        
+                       
+                       <div id="small_banner">
+    <carousel autoplay v-model="value2">
+        <carousel-item>
+            <div class="demo-carousel" style="height: 300px;background-image: url(/image/banner2.jpg); background-size: 100% 300px ; background-repeat: no-repeat;"></div>
+        </carousel-item>
+        <carousel-item>
+            <div class="demo-carousel" style="height: 300px;background-image: url(/image/banner8.jpg); background-size: 100% 300px ; background-repeat: no-repeat;"></div>
+        </carousel-item>
+        <carousel-item>
+            <div class="demo-carousel" style="height: 300px;background-image: url(/image/banner9.png); background-size: 100% 800px ; background-repeat: no-repeat;"></div>
+        </carousel-item>
+        <carousel-item>
+            <div class="demo-carousel" style="height: 300px;background-image: url(/image/banner5.jpg); background-size: 100% 300px ; background-repeat: no-repeat;"></div>
+        </carousel-item>
+    </carousel>
+</div>
+
+
+
+<script type="text/javascript">
+  
+    var Main = {
+        data () {
+            return {
+                value2: 0
+            }
+        }
+    }
+
+var Component = Vue.extend(Main)
+new Component().$mount('#small_banner')
+
+
+</script>
+                        
+                        <div class="line_2" style="margin:34px 20px 28px; margin-bottom: 50px;"></div>
+                        
+
+
+
+
+
+                        <!-- 左1列 -->
+                     
+
+
+
+
+
+                        <div class="block_home_col_1">
+                           <div class="col-sm-3"  style="margin-top: -30px;  display: block; ">
+                        <a href=" /articles/blog_list?type=养老情报站 " class="btn btn-xl green" style="margin-left: -15px;padding: 0px;  font-size: 16px;">
+                       养老情报站</a>
+                    </div> 
+
+          
+                           <% @article_qbz.each do |f|  %>
+                          <div class="block_home_post" style=" margin-top: 25px;">
+                <div class="pic" >
+                  <a href="news_post.html" class="w_hover">
+                    <img src="/uploads/<%= f.img_address %>/"  style="height: 90px; ">
+                    <span></span>
+                  </a>
+                </div>
+                                        
+                <div class="text">
+                  <p class="title"><a href="/articles/blog/<%= f.id %>"><%= f.title %></a></p>
+                  <div class="date"><p><%= f.created %></p></div>
+                                    <div class="icons">
+                                      <ul>
+                                          <li><a href="#" class="views"></a></li>
+                                        </ul>
+                                    </div>
+                </div>
+              </div>
+              <div class="line_3" style="margin:14px 0px 17px;"></div>
+                           <% end %> 
+
+
+
+
+
+
+                            
+                            
+             
+                            
+                            
+               
+                            
+                        </div>
+                        
+
+
+
+
+
+                        <!-- 左边2列 -->
+                        <div class="block_home_col_2">
+
+
+                     <div class="col-sm-3"  style="margin-top: -30px; display: block; ">
+                        <a href="/articles/blog_list?type=对话养老院" class="btn btn-xl red" style="margin-left: -15px;padding: 0px;  font-size: 16px;">
+                       
+对话养老院</a>
+                    </div> 
+
+          
+                           <% @article_dhyly.each do |f|  %>
+                          <div class="block_home_post" style=" margin-top: 25px;">
+                <div class="pic" >
+                  <a href="news_post.html" class="w_hover">
+                    <img src="/uploads/<%= f.img_address %>/" style="height: 90px; ">
+                    <span></span>
+                  </a>
+                </div>
+                                        
+                <div class="text">
+                  <p class="title"><a href="/articles/blog/<%= f.id %>"><%= f.title %></a></p>
+                  <div class="date"><p><%= f.created %></p></div>
+                                    <div class="icons">
+                                      <ul>
+                                          <li><a href="#" class="views"></a></li>
+                                        </ul>
+                                    </div>
+                </div>
+              </div>
+              <div class="line_3" style="margin:14px 0px 17px;"></div>
+                           <% end %> 
+
+   
+                        </div>
+
+
+
+
+
+
+                        <div class="clearboth"></div>
+                        
+                        <div class="line_3" style="margin:14px 0px 13px;"></div>
+                        <a href="main_news.html" class="lnk_all_news fl"></a>
+                        <div class="clearboth"></div>
+                        <!-- <div class="line_3" style="margin:13px 0px 35px;"></div> -->
+                        
+                           <div class="col-sm-3"  style="margin-top: -10px;display: block;  ">
+                        <a href="/articles/blog_list?type=志愿者服务大厅 " class="btn btn-xl orange" style="margin-left: -15px;padding: 0px; font-size: 16px;">志愿者服务大厅
+                       </a>
+                    </div> 
+                           
+                        <div class="line_4" style="margin:-4px 0px 18px; height: 1px;"></div>
+                        
+                        <div class="block_topic_news">
+                           <% @article_zyzfw.each do |f|  %>
+                          <article class="block_topic_post">
+                              <p class="title" ><a href="/articles/blog/<%= f.id %>" style="display: inline-block; height: 35px; overflow: hidden;"><%= f.title %></a></p>
+                                <div class="f_pic"><a href="news_post.html" class="general_pic_hover scale"><img src="/uploads/<%= f.img_address %>/" alt="" style="width: 225px;"></a></div>
+                                <p class="text" style="display: inline-block;  height: 35px; overflow: hidden;">  <%= f.details %>   </p>
+                                <div class="info">
+                                  <div class="date"><p><%= f.created %></p></div>
+                                    
+                                    <div class="r_part">
+                                      <div class="category"><p><a href="#">Business</a></p></div>
+                                        <a href="#" class="views"></a>
+                                    </div>
+                                </div>
+                            </article>
+                             <% end %> 
+                        
+                          
+                            
+  
+              
+                          
+
+
+                      
+                            
+                        </div>
+                        
+                        <div class="line_3" style="margin:20px 0px 24px;"></div>
+                        
+                        <div class="block_pager">
+                          <a href="#" class="prev">Previous</a>
+                            <a href="#" class="next">Next</a>
+                            
+                            <div class="pages">
+                              <ul>
+                                  <li class="current"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="clearboth"></div>
+                        </div>
+                        
+                        <div class="line_2" style="margin:24px 0px 35px;"></div>
+                        
+                        <!-- <h3 style="font-size:16px;">Best Materials</h3> -->
+                        <!-- <div class="line_4" style="margin:-4px 0px 18px;"></div> -->
+                           <div class="col-sm-3"  style="margin-top: -10px;display: block;  ">
+                        <a href="/articles/blog_list?type=作品展示" class="btn btn-xl blue" style="margin-left: -15px;padding: 0px; font-size: 16px;">作品展示
+                       </a>
+                    </div> 
+                        <div class="block_best_materials">
+                          <div class="slider">
+                                <div id="best_materials_slider" class="flexslider">
+                                    <ul class="slides">
+
+                                         <% @article_show.each do |f|  %>
+                                        <li>
+                                            <div class="block_best_material_post">
+                                                <div class="f_pic"><a href="news_post.html" class="w_hover"><img  src="/uploads/<%= f.img_address %>/" alt="" /><span></span></a></div>
+                                                <p class="title"><a href="news_post.html"><%= f.title %></a></p>
+                                                <div class="info">
+                                                    <div class="date"><p><%= f.created %></p></div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <% end %>
+                                    
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <script type="text/javascript">
+                $(function() {
+                  $('#best_materials_slider').flexslider({
+                    animation : 'slide',
+                    controlNav : false,
+                    directionNav : true,
+                    animationLoop : false,
+                    slideshow : false,
+                    itemWidth: 213,
+                    itemMargin: 0,
+                    minItems: 1,
+                    maxItems: 3,
+                    move: 1,
+                    useCSS : false
+                  });
+                });
+              </script>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    
+
+
+
+
+
+
+
+
+
+                    <!-- 右边侧边栏2 -->
+                    <div class="sidebar" >
+                      <div class="separator" style="height:31px;"></div>
+                     <div class="col-sm-3"  style="margin-top: -10px;display: block;  ">
+                        <a href=" /articles/blog_list?type=头条新闻  " class="btn btn-xl green" style="margin-left: -15px;padding: 0px; font-size: 16px;">
+                       头条新闻</a>
+                    </div> 
+
+
+                        <div class="block_popular_posts" style="margin-top: 40px;">
+                            <!-- 3个 -->
+                            <% @article_new.each do |f|  %>
+                          <div class="article" >
+                <div class="pic" style="margin-top: 30px;">
+                  <a href="" class="w_hover">
+                    <img src="/uploads/<%= f.img_address %>/"  style="height: 90px; ">
+                    <span></span>
+                  </a>
+                </div>
+                                        
+                <div class="text">
+                  <p class="title" ><a href="/articles/blog/<%= f.id %>"><%= f.title %></a></p>
+                  <div class="date"><p><%= f.created %></p></div>
+                                    <div class="icons">
+                                      <ul>
+                                          <li><a href="#" class="views"></a></li>
+                                            <li><a href="#" class="comments"></a></li>
+                                        </ul>
+                                    </div>
+                </div>
+              </div>
+
+
+              <div class="line_3"></div>
+                       <% end %>     
+                        <div class="separator" style="height:31px;"></div>
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="block_popular_stuff" style="float: left;">
+                           <div class="col-sm-3"  style="margin-top: -10px;display: block;  ">
+                        <a href="/articles/blog_list?type=志愿者活动 " class="btn btn-xl blue" style="margin-left: -15px;padding: 0px; font-size: 16px;">志愿者活动
+                       </a>
+                    </div> 
+                            
+                            <% @article_article.each do |f|  %>
+                            <div class="content">
+                              
+                              <div class="media"><a href="http://www.youtube.com/watch?v=ySIvism2af8" class="general_pic_hover play no_fx" data-rel="prettyPhoto" title="Popular Video"><img src="/uploads/<%= f.img_address %>/" alt="" /></a></div>
+                                <p><a href="blog_post_w_video.html"><%= f.title %></a> <img src="/greenIndex/images/icon_video.gif" alt="" /></p>
+                                <p class="date"><%= f.created %></p>
+                            </div>
+                          
+                            <div class="clearboth"></div>
+                            <div class="line_2"></div>
+                            <% end %>
+                        </div>
+
+
+                        
+ 
+
+
+
+
+                    </div>
+                    
+                  <div class="clearboth"></div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="sidebar" style="margin-right: 50px;">
+            
+                      <div class="separator" style="height:31px;"></div>
+                     <div class="col-sm-3"  style="margin-top: -10px;display: block;  ">
+                        <a href="/articles/blog_list?type=绘益养老商城" class="btn btn-xl blue" style="margin-left: -15px;padding: 0px; font-size: 16px;">
+                       绘益养老商城</a>
+                    </div> 
+                        <div class="block_popular_posts" style="margin-top: 40px;">
+                         
+                          
+                      
+                            <!-- 3个 -->
+                            <% @article_shop.each do |f|  %>
+                          <div class="article" >
+                <div class="pic" style="margin-top: 30px;">
+                  <a href="" class="w_hover">
+                    <img src="/uploads/<%= f.img_address %>/"  style="height: 90px; ">
+                    <span></span>
+                  </a>
+                </div>
+                                        
+                <div class="text">
+                  <p class="title" ><a href="/articles/blog/<%= f.id %>"><%= f.title %></a></p>
+                  <div class="date"><p><%= f.created %></p></div>
+                                    <div class="icons">
+                                      <ul>
+                                          <li><a href="#" class="views"></a></li>
+                                            <li><a href="#" class="comments"></a></li>
+                                        </ul>
+                                    </div>
+                </div>
+              </div>
+
+
+              <div class="line_3"></div>
+                       <% end %>     
+
+                        <div class="separator" style="height:31px;"></div>
+                        
+                    </div>
+
+                  <div class="clearboth"></div>
+                </div>
+
+
+
+
+
+                          <div class="sidebar" style="margin-right: 50px;">
+            
+                      <div class="separator" style="height:31px;"></div>
+                     <div class="col-sm-3"  style="margin-top: -10px;display: block;  ">
+                        <a href="/articles/blog_list?type=绘益志愿者招募令 " class="btn btn-xl green" style="margin-left: -15px;padding: 0px; font-size: 16px;">
+                       绘益志愿者招募令</a>
+                    </div> 
+                        <div class="block_popular_posts" style="margin-top: 40px;">
+                         
+                          
+                      
+                            <!-- 3个 -->
+                            <% @article_zml.each do |f|  %>
+                          <div class="article" >
+                <div class="pic" style="margin-top: 30px;">
+                  <a href="" class="w_hover">
+                    <img src="/uploads/<%= f.img_address %>/"  style="height: 90px; ">
+                    <span></span>
+                  </a>
+                </div>
+                                        
+                <div class="text">
+                  <p class="title" ><a href="/articles/blog/<%= f.id %>"><%= f.title %></a></p>
+                  <div class="date"><p><%= f.created %></p></div>
+                                    <div class="icons">
+                                      <ul>
+                                          <li><a href="#" class="views"></a></li>
+                                            <li><a href="#" class="comments"></a></li>
+                                        </ul>
+                                    </div>
+                </div>
+              </div>
+
+
+              <div class="line_3"></div>
+                       <% end %>     
+
+                        <div class="separator" style="height:31px;"></div>
+                        
+                    </div>
+
+                  <div class="clearboth"></div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+        
+   
+   <%= render "articles/footer"  %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script src="/green/js/jquery-1.8.3.min.js">
+    </script>
+    <script src="/green/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript" src="/green/js/hover-dropdown.js">
+    </script>
+    <script defer src="/green/js/jquery.flexslider.js">
+    </script>
+    <script type="text/javascript" src="/green/assets/bxslider/jquery.bxslider.js">
+    </script>
+
+    <script type="text/javascript" src="/green/js/jquery.parallax-1.1.3.js">
+    </script>
+    <script src="/green/js/wow.min.js">
+    </script>
+    <script src="/green/assets/owlcarousel/owl.carousel.js">
+    </script>
+
+    <script src="/green/js/jquery.easing.min.js">
+    </script>
+    <script src="/green/js/link-hover.js">
+    </script>
+    <script src="/green/js/superfish.js">
+    </script>
+    <script type="text/javascript" src="/green/js/parallax-slider/jquery.cslider.js">
+    </script>
+  <script type="text/javascript" src="/greenIndex/layout/plugins/ibuttons/lib/jquery.ibutton.min.js"></script>
+
+<script type="text/javascript" src="/greenIndex/layout/plugins/ajaxform/jquery.form.js"></script>
+
+<script src="/greenIndex/layout/plugins/video-audio/mediaelement-and-player.js"></script>
+<script type="text/javascript" src="/greenIndex/layout/plugins/scrollto/jquery.scroll.to.min.js"></script>
+<script type="text/javascript" src="/greenIndex/layout/js/main.js"></script>
+<script type="text/javascript" src="/greenIndex/layout/plugins/flexslider/jquery.flexslider-min.js"></script>
+ 
+<script type="text/javascript" src="/greenIndex/layout/js/jquery.js"></script>
+ <script type="text/javascript" src="/green/js/parallax-slider/modernizr.custom.28468.js">
+    </script>
+    <script type="text/javascript" src="/greenIndex/layout/plugins/prettyphoto/jquery.prettyPhoto.js"></script>
+
+<script type="text/javascript" src="/greenIndex/layout/plugins/tools/jquery.tools.min.js"></script>
+
+<script type="text/javascript" src="/greenIndex/layout/plugins/calendar/calendar.js"></script>
+
+
+   
+<script type="text/javascript">
+  jQuery(function () {
+  });
+</script>
+
+
+
+
+    <script src="/green/js/common-scripts.js">
+    </script>
+
+   
+  </body>
+</html>

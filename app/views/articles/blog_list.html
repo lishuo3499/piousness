@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="The Page Description">
+		<style type="text/css">@-ms-viewport{width: device-width;}</style>
+		<title>Beetle - Blog List Style</title>
+
+		<link rel="stylesheet" href="/blog_list/css/layers.min.css" media="screen">
+		<link rel="stylesheet" href="/blog_list/css/font-awesome.min.css" media="screen"> 
+		<link rel="stylesheet" href="/blog_list/style.css" media="screen">
+
+
+
+	</head>
+
+	<body class="blog list-style">
+
+	<%= render "/articles/header"  %>
+
+		<main role="main">
+			  
+
+			<div id="main" class="row">
+
+				<div class="row-content buffer-left buffer-right buffer-bottom clear-after">
+					<div class="column nine">
+
+						<% @blog_list.each do |f| %>
+						<article class="clear-after">
+							<div class="column three">
+								<figure><img src="/uploads/<%= f.img_address %>/" alt=""></figure>
+							</div><!-- column three -->
+							<div class="column nine last">
+								<h2><a href="/articles/blog/<%= f.id %>"><%= f.title %></a></h2>
+								<h5 class="meta-post"><time datetime="2013-11-10"><%= f.created %></time></h5>
+								<p style="text-overflow:clip; max-height: 105px; overflow: hidden;">  <%= f.details %>  </p>	
+							</div><!-- column nine -->
+						</article>
+					<% end %>
+
+
+
+
+
+
+
+
+						<div id="pagination">
+							<ul class="clear-after reset plain">
+								<li id="older" class="pagination-nav"><a href="#" class="button transparent aqua"><i class="fa fa-chevron-left"></i><span class="label">Older</span></a></li> 
+								<li id="newer" class="pagination-nav"><a href="#" class="button transparent aqua"><span class="label">Newer</span><i class="fa fa-chevron-right"></i></a></li>  
+							</ul>
+						</div>											
+					</div>
+
+
+
+
+
+
+
+
+
+					<aside role="complementary" class="sidebar column three last">
+						<div class="widget widget_search">
+							<form role="search">
+								<span class="pre-input"><i class="icon icon-search"></i></span>
+								<input type="text" placeholder="Search..." value="" class="plain buffer">
+							</form>
+						</div>
+						<div class="widget">
+							<h4>导航</h4>
+							<div class="textwidget">
+								<a href=" /articles/blog_list?type=头条新闻  "> 头条新闻 </a><br>
+
+								<a href=" /articles/blog_list?type=养老情报站 ">养老情报站</a><br>
+
+                                	<a href="/articles/blog_list?type=对话养老院">对话养老院</a> <br> 
+
+                                <a href="/articles/blog_list?type=志愿者服务大厅 ">志愿者服务大厅</a><br>
+                                	<a href="/articles/blog_list?type=绘益养老商城">绘益养老商城</a> <br> 
+
+                                <a href="/articles/blog_list?type=志愿者活动 ">志愿者活动</a><br>
+                                	<a href="/articles/blog_list?type=作品展示">作品展示</a> <br> 
+
+                                <a href="/articles/blog_list?type=绘益志愿者招募令 ">绘益志愿者招募令</a><br>
+
+							</div><!-- la class="textwidget" è forse generata automaticamente da wp -->
+						</div>
+											
+					</aside>
+				</div><!-- row-content -->
+			</div><!-- row -->
+		</main><!-- main -->
+
+  <%= render "articles/footer"  %>
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		 -->
+		<script src="/blog_list/js/plugins.js"></script>
+		<script src="/blog_list/js/beetle.js"></script>
+
+	</body>
+
+</html>
